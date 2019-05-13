@@ -1,0 +1,180 @@
+body,ul,li{ margin:0;padding:0; }
+body{ font:12px/1.5 Tahoma; }
+
+.inner{
+    position: relative;
+} 
+.home-inner{
+    width: 1000px;
+    height:450px;
+    //margin: 0 auto;
+    position: relative;
+    left: 0;
+    //top: -30px;
+    //padding-top: 98px;
+    //background: #f6f6f8;
+}
+
+#outer{
+  width: 800px;
+  max-width: 800px;
+  margin:10px auto;
+  //margin-top:100px;
+  clear: both;
+  #tab{
+    height: 45px;
+    position: relative;
+    clear: both;
+    margin-top: 30px;
+    overflow:hidden;
+    li {height:45px;
+      cursor:pointer;
+      list-style:none;
+      display: inline-block;
+      margin-right: 40px;
+      line-height: 45px;
+      color: #8d92a1;
+      font-size: 14px;
+      font-weight: 400;
+     }
+     .current{ color: #00c2b3; }
+  }
+  #content{ 
+   // height: 393px;
+    width: 800px;
+    
+    // display: none;
+    border-top: solid 2px #63d4c7;
+    >div{ display:none;  }
+    .active{ display:block ;}
+
+    .sub-ul{
+      width: 100%;
+      height: 393px;
+      font-weight: 400;
+      display: block;
+      background: #fff;
+     }
+     a{
+       text-decoration: none;
+       color: #414a60;
+     }
+     img{
+      border: none;
+     }
+     .sub-ul li:hover .sub-li{
+      box-shadow:4px 4px 10px #e8e8e8;
+     }
+     .sub-ul li{
+      height: 131px;
+      width: 33.33333333%;
+      float: left;
+      
+        .sub-li{
+          display: block;
+          border-right: solid 2px #f6f6f8;
+          border-bottom: solid 2px #f6f6f8;
+          height: 100%;
+          margin-right: -2px;
+            a.job-info{
+              height: 71px;
+              padding-top:10px;
+              display: block;
+            }
+            p{
+              height: 35px;
+              line-height: 35px;
+              font-size: 15px;
+              color: #61687c;
+              width: 190px;
+              padding-right: 100px;
+              margin: 0 auto 0 auto;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              position: relative;
+              
+            }
+            p:hover{
+              color:#00c2b3;
+            }
+            .salary{
+              color: #fc6c38;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            p.job-text{
+              font-size: 12px;
+              color: #61687c;
+              border-bottom: dashed 1px #e3e7ed;
+              width: 290px;
+              padding-right: 0;
+              line-height: 28px;
+                
+            }
+            .vline {
+              display: inline-block;
+              width: 1px;
+              height: 12px;
+              vertical-align: middle;
+              background: #e0e0e0;
+              margin: 0 10px;
+          }
+            a.user-info{
+              padding: 7px 0 9px 0;
+              display: block;
+                p{
+                  font-size: 14px;
+                  width: 290px;
+                  padding-right: 0;
+                }
+                img{
+                  width: 30px;
+                  height: 30px;
+                  vertical-align: middle;
+                  border-radius: 50%;
+                  margin-right: 15px;
+                }
+                .user-text{
+                  margin-left: 10px;
+                  font-size: 12px;
+                  color: #8d92a1;
+                }
+            }
+        }
+    }
+    .common-tab-more {
+      text-align: center;
+      margin-top: 20px;
+      background: #f6f6f8;
+        .btn {
+          width: 250px;
+          font-size: 15px;
+          height: 32px;
+          line-height: 32px;
+          background: #f6f6f8;
+        }
+        .btn:hover{
+          background-color: #5dd5c8;
+          color:#fff;
+        }
+        .btn-outline {
+          background: #fff;
+          color: #5dd5c8;
+        }
+    } 
+  }
+  .btn {
+    display: inline-block;
+    min-width: 112px;
+    box-sizing: content-box;
+    border: 1px #5dd5c8 solid;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+  }  
+}
+
+
+

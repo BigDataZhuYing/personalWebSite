@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    background: #333;
+    box-sizing: border-box;
+    padding: 35px 20px 25px 20px;
+    margin-top: 200px;
+    .footerinner {
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        .share {
+            width: 240px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        ul {
+            list-style: none;
+        }
+        .share li {
+            float: left;
+            height: 50px;
+            padding: 5px 20px;
+        }
+        .footerinfo {
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            opacity: 0.8;
+            margin:10px 0;
+            p{
+                line-height: 22px;
+            }
+        }
+    }
+}
